@@ -162,7 +162,7 @@ values_block = (
     bi('Autonomy: ', 'Platforms override rational decision-making by exploiting psychological vulnerabilities.') +
     bi('Dignity: ', 'Treating human attention as a commodity to be monetised violates personal dignity.') +
     bi('Fairness: ', 'Minors cannot meaningfully consent, yet they are among the most heavily targeted users.') +
-    bi('Honesty: ', 'Companies have suppressed internal research showing harm while publicly claiming to care about users.') +
+    bi('Honesty: ', 'Companies have suppressed internal research showing harm while publicly claiming to care about users. Brands and influencers routinely hide paid promotions from followers, violating consumer protection norms.') +
     bi('Justice: ', 'Harms fall disproportionately on young, vulnerable users; profits flow to shareholders.')
 )
 
@@ -224,6 +224,8 @@ HTML_CONTENT = """<!DOCTYPE html>
 <p>The issue exists within the technology and consumer digital sector but its consequences reach across mental health, education, family life, and democratic discourse.</p>
 <h2>Who is affected, and in what way?</h2>
 <p>Young people (13&ndash;25) are most severely affected. Meta&rsquo;s own leaked 2021 internal research found that 32% of teenage girls said Instagram made them feel worse about their bodies. SADAG has identified heavy social media use as a contributing factor in rising youth anxiety. All users are susceptible to algorithmic misinformation amplification, and society broadly suffers as echo chambers erode shared reality.</p>
+<p>Content creators and influencers are also caught in the same system. An SBS Australia undercover investigation (&ldquo;Faking Influence,&rdquo; 2019) created a fake Instagram account, @thatcoastalgirl, and grew it to 84,000 followers using purchased bots, fake likes, and engagement pods &ndash; all standard industry practice. The investigation found that only one brand instructed them to disclose the sponsorship; another explicitly told them <em>not</em> to use a disclosure tag. The result is a culture of hidden advertising that manipulates followers while violating consumer protection law, contributing to eating disorders and distorted self-image in followers who trust influencer recommendations as genuine.</p>
+<p>The youngest users are increasingly at risk in a new way: &ldquo;Gen Alpha&rdquo; children (born after 2010) are being placed on social media as influencers by their parents, often before they can understand what that means. Seven-year-old twins Koti and Haven Garza have 4.8 million TikTok followers posting skincare routines. These children cannot consent to their own commodification. Social researcher Mark McCrindle describes Gen Alpha as the first &ldquo;global experiment&rdquo; in digital socialisation. Illinois became the first US state to pass legislation requiring child content creators receive a share of earnings; no equivalent protection exists in South Africa.</p>
 """ + visual(2, 'Insert bar graph: Teen anxiety and depression rates 2012–2023 (global and South African data)') + """
 <h2>Which ethical values or principles are involved?</h2>
 """ + values_block + """
@@ -297,6 +299,8 @@ HTML_CONTENT = """<!DOCTYPE html>
 <p class="ref">South African Depression and Anxiety Group (SADAG) (2023) <em>Youth mental health and digital wellbeing</em>. SADAG. Available at: &lt;https://www.sadag.org&gt; (Accessed: June 2026).</p>
 <p class="ref">Twenge, J.M. (2017) <em>iGen: Why Today&rsquo;s Super-Connected Kids Are Growing Up Less Rebellious, More Tolerant, Less Happy</em>. Atria Books: New York.</p>
 <p class="ref">Williams, J. (2018) <em>Stand Out of Our Light: Freedom and Resistance in the Attention Economy</em>. Cambridge University Press: Cambridge.</p>
+<p class="ref">Weitenberg, C. and Potaka, E. (2019) <em>Faking influence: We faked an influencer page &ndash; here's what we learnt</em> [Documentary series: &lsquo;Like, Subscribe, Follow&rsquo;]. SBS The Feed. Available at: &lt;https://www.sbs.com.au/news/feature/faking-influence-we-faked-influencer-page-what-we-learnt&gt; (Accessed: June 2026).</p>
+<p class="ref">IBTimes (2024) The rise of Gen Alpha influencers: Navigating ethics and regulations in child content creation. <em>International Business Times</em>. Available at: &lt;https://www.ibtimes.com/rise-gen-alpha-influencers-navigating-ethics-regulations-child-content-creation-3725413&gt; (Accessed: June 2026).</p>
 </div>
 
 <div class="section-break">
