@@ -1,5 +1,25 @@
 from weasyprint import HTML, CSS
-import os
+import os, base64
+
+VISUALS_DIR = '/home/user/Life-Orientation/visuals'
+VISUAL_FILES = {
+    1: 'v1_platforms.png',
+    2: 'v2_barchart.png',
+    3: 'v3_sixlenses.png',
+    4: 'v4_attention_economy.png',
+    5: 'v5_interview1.png',
+    6: 'v6_interview2.png',
+    7: 'v7_interview3.png',
+    8: 'v8_summary_table.png',
+    9: 'v9_banner.png',
+    10: 'v10_infographic.png',
+}
+
+def img_data_uri(n):
+    path = os.path.join(VISUALS_DIR, VISUAL_FILES[n])
+    with open(path, 'rb') as f:
+        data = base64.b64encode(f.read()).decode()
+    return 'data:image/png;base64,' + data
 
 CSS_STYLES = """
 @page {
@@ -51,7 +71,8 @@ def bi(bold, rest):
     return '<p class="bold-inline"><strong>{}</strong>{}</p>'.format(bold, rest)
 
 def visual(n, desc):
-    return '<div class="visual">VISUAL {} – {}</div>'.format(n, desc)
+    uri = img_data_uri(n)
+    return '<figure style="margin:0.6em 0;page-break-inside:avoid;"><img src="{}" alt="{}" style="max-width:100%;height:auto;display:block;"><figcaption style="font-size:9pt;color:#555;text-align:center;margin-top:3pt;font-style:italic;">Visual {} – {}</figcaption></figure>'.format(uri, desc, n, desc)
 
 def int_header(n, title, name, desig):
     return (
